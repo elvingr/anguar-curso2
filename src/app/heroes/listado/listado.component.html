@@ -1,0 +1,40 @@
+<p>listado works!</p>
+
+<div class="container">
+    <div class="flex">
+
+        <div>
+            <h3 *ngIf="heroeBorrado.length; else noBorrado">Heroe Borrado</h3>
+
+            <ng-template #noBorrado>
+                <h3>No ha borrado nada</h3>
+            </ng-template>
+             
+        <ul>
+            <li *ngFor="let heroe of heroeBorrado; let i= index"> {{i+1}} - {{ heroe}}</li>
+        </ul>
+        
+        </div>
+        
+        <div class="colort">
+            <h3>Heroe Restante</h3>
+            <ul>
+                <li *ngFor="let heroe of heroes; let i= index"> {{i+1}} - {{ heroe}}</li>
+            </ul>
+            
+        
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+<button (click)="borrar()">Borrar</button>
+<button (click)="agregar()">Agregar</button>
+
+

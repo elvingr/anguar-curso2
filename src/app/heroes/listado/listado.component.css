@@ -1,0 +1,14 @@
+.colort{
+    background-color: rgb(128, 204, 132);
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.container{
+    width: 620px;
+    height: 200px;
+
+}
